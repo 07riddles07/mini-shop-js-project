@@ -113,6 +113,7 @@ label {
 }
 
 /* Pictures */
+
 .one {
     background-image: url(images/1.jpg);
 }
@@ -197,14 +198,6 @@ label {
     font-weight: 400;
 }
 
-.input-text:focus {
-    outline: none;
-}
-
-.input-text:focus + .label, .input-text.not-empty + .label {
-    transform: translateY(-24px);
-}
-
 .label {
     position: absolute;
     left: 20px;
@@ -213,38 +206,31 @@ label {
     line-height: 26px;
     font-weight: 400;
     color: #888;
-    cursor: text;
-    transition: transform 0.2s ease-in-out;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-text:focus {
+    outline: none;
+}
+
+.input-text:focus + .label, .input-text:valid + .label {
+    transform: translateY(-24px);
 }
 
 .submit-btn {
     display: inline-block;
-    background-color: #000;
-    color: #fff;
+    margin-bottom: 70px;
+    padding: 8px 16px;
+    background-color: #00081c;
+    color: #cdbc7a;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px;
     line-height: 24px;
-    padding: 8px 16px;
     border: none;
     cursor: pointer;
 }
 
-.note {
-    position: absolute;
-    left: 0;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    font-size: 16px;
-    line-height: 21px;
-}
 
-.link {
-    color: #888;
-    text-decoration: none;
-}
 
-.link:hover {
-    text-decoration: underline;
-}

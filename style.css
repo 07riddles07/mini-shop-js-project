@@ -1,0 +1,250 @@
+body {
+    background-color: #fcfafa;
+    font-family: 'Nunito', sans-serif;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 45px;
+    color: #00081c;
+    text-shadow: 1px 1px #cdbc7a;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 30px;
+    color: #00081c;
+}
+
+/* Items' Description */
+.container {
+    display: flex;
+}
+
+.item {
+    position: relative;
+    flex: 1;
+    margin: 5px;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+h4,
+.descr,
+.price {
+    position: absolute;
+    padding: 6px;
+    border-radius: 2px;
+    opacity: 0;
+}
+
+h4 {
+    top: 15px;
+    left: 35px;
+    background-color: #00081c;
+    color: #cdbc7a;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.descr {
+    top: 110px;
+    left: 35px;
+    font-weight: 300;
+    background-color: #eec9c3;
+    color: #00081c;
+}
+
+.price {
+    bottom: 30px;
+    left: 35px;
+    background-color: #00081c;
+    color: #cdbc7a;
+    font-weight: 400;
+}
+
+/* .selected class is from script.js */
+
+.selected {
+    flex: 4;
+}
+
+.selected h4,
+.selected .descr,
+.selected .price {
+    opacity: 1;
+    transition: all 1s ease-in;
+}
+
+.selected h4 {
+    font-size: 30px;
+}
+
+.selected .descr {
+    font-size: 18px;
+}
+
+.selected .price {
+    font-size: 35px;
+}
+
+
+label {
+    font-size: 20px;
+}
+
+.text-input {
+    padding: 12px 20px;
+    background-color: #eec9c3;
+    border: none;
+}
+
+.btn {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    background-color: #00adb5;
+    flex: 1;
+}
+
+/* Pictures */
+.one {
+    background-image: url(images/1.jpg);
+}
+
+.two {
+    background-image: url(images/2.jpg);
+}
+
+.three {
+    background-image: url(images/3.jpg);
+}
+
+.four {
+    background-image: url(images/4.jpg);
+}
+
+.five {
+    background-image: url(images/5.jpeg);
+    background-position: right;
+}
+
+.six {
+    background-image: url(images/6.jpg);
+}
+
+/* Form */
+
+.row {
+    margin: -20px 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row .col {
+    padding: 0 20px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.row .col.x-50 {
+    width: 50%;
+}
+
+.row .col.x-100 {
+    width: 100%;
+}
+
+.content-wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.get-in-touch {
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-field {
+    position: relative;
+    margin: 32px 0;
+}
+
+.input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #000;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.input-text:focus {
+    outline: none;
+}
+
+.input-text:focus + .label, .input-text.not-empty + .label {
+    transform: translateY(-24px);
+}
+
+.label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #888;
+    cursor: text;
+    transition: transform 0.2s ease-in-out;
+}
+
+.submit-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.note {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.link {
+    color: #888;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

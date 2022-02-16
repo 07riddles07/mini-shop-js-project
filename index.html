@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches mini-shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/watch.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>BESTWATCHES SHOP</h1>
+    </div>
+
+    <!-- Pictures  -->
+    <div class="container">
+        <div class="item one selected">
+            <h4>Classic Silver</h4>
+            <p class="descr">Silver</p>
+            <p class="price">280$</p>
+        </div>
+
+        <div class="item two">
+            <h4>Classic Universe</h4>
+            <p class="descr">Silver & Black</p>
+            <p class="price">500$</p>
+        </div>
+
+        <div class="item three">
+            <h4>Classic Breeze</h4>
+            <p class="descr">Rose Gold</p>
+            <p class="price">200$</p>
+        </div>
+
+        <div class="item four">
+            <h4>Classic Gold</h4>
+            <p class="descr">Gold</p>
+            <p class="price">470$</p>
+        </div>
+
+        <div class="item five">
+            <h4>Classic Cosmo</h4>
+            <p class="descr">Silver Steel</p>
+            <p class="price">550$</p>
+        </div>
+
+        <div class="item six">
+            <h4>Classic Today</h4>
+            <p class="descr">Rose Gold</p>
+            <p class="price">199$</p>
+        </div>
+    </div><br><br>
+
+    <div class="heading">
+        <h3>HOW CAN WE HELP?</h3>
+    </div><br>
+
+    <!-- Contact Form -->
+    <section class="heading">
+        <form class="contact-form row" action="https://formspree.io/f/meqngeeg" method="POST">
+            <input type="hidden" name="_language" value="en">
+
+            <div class="form-field col x-50">
+                <input id="name" class="input-text" type="text" required>
+                <label class="label" for="name">Name</label>
+            </div>
+
+            <div class="form-field col x-50">
+                <input id="email" class="input-text" name="email" type="email" required>
+                <label class="label" for="email">E-mail</label>
+            </div>
+
+            <div class="form-field col x-100">
+                <input id="message" class="input-text" type="text" name="message" required>
+                <label class="label" for="message">Message</label>
+            </div>
+
+            <div class="form-field col x-100 align-center">
+                <input class="submit-btn" type="submit" value="Send">
+            </div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -232,5 +232,23 @@ label {
     cursor: pointer;
 }
 
+/* Mobile adaptation */
+@media all and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        height: 200vh;    
+    }  
+}
+
+@media all and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        height: 200vh;    
+    } 
+
+    h1 {
+        text-align: center;
+    }
+}
 
 

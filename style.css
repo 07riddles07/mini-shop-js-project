@@ -3,10 +3,7 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-.heading {
-    display: flex;
-    justify-content: center;
-}
+
 
 h1 {
     font-weight: 600;
@@ -19,6 +16,11 @@ h3 {
     font-weight: 400;
     font-size: 30px;
     color: #00081c;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
 }
 
 /* Items' Description */
@@ -141,8 +143,8 @@ label {
 
 /* Form */
 
-.row {
-    margin: -20px 0;
+.contact-form {
+    margin: -20px 20px;
 }
 
 .row:after {
